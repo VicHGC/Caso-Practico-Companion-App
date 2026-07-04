@@ -58,6 +58,8 @@ npm run web
 
 ## Estructura del proyecto
 
+```bash
+
 companion-app/
 ├── App.js                    # Punto de entrada principal
 ├── screens/
@@ -78,3 +80,4 @@ companion-app/
 │   └── wireframes/           # Prototipos de la Fase 1
 ├── fase3.md                  # Estrategia offline-first
 └── README.md
+```
