@@ -36,7 +36,7 @@ npm run web
 ### Opcion 2 - dispositivo fisico (Expo Go).
 
 1. Instala Expo Go desde la App Store (iOS) o Google Play (Android).
-2. Ejecuta npm start en tu terminal.
+2. Ejecuta ```bash npm start ``` en tu terminal.
 3. Escanea el código QR que aparece en la consola utilizando la aplicación Expo Go.
 
 ## Funcionalidades
