@@ -16,7 +16,6 @@ Aplicación móvil para operadores de campo que registran sesiones de recolecci�
 Clona el repositorio en tu computadora y ejecuta los siguientes comandos:
 
 ```bash
-cd companion-app
 npm install
 ```
 ## Ejecutar en local
