@@ -83,9 +83,9 @@ companion-app/
 ```
 ## Wirefrimes del prototipo
 
-<img width="150" height="824" alt="MainView" src="https://github.com/user-attachments/assets/29db6c00-c064-4c00-8dc9-64daeef1b3c1" />
-<img width="150" height="824" alt="SessionRecordingView" src="https://github.com/user-attachments/assets/8f320b7f-8888-4dc6-98b1-abed6676da29" />
-<img width="150" height="840" alt="SessionIncidentReport" src="https://github.com/user-attachments/assets/8a1288e9-ba9e-4f1e-b5a4-a40fdb3c314d" />
+<img width="150" alt="MainView" src="https://github.com/user-attachments/assets/29db6c00-c064-4c00-8dc9-64daeef1b3c1" />
+<img width="150" alt="SessionRecordingView" src="https://github.com/user-attachments/assets/8f320b7f-8888-4dc6-98b1-abed6676da29" />
+<img width="150" alt="SessionIncidentReport" src="https://github.com/user-attachments/assets/8a1288e9-ba9e-4f1e-b5a4-a40fdb3c314d" />
 
 
 
