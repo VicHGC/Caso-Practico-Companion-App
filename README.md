@@ -17,7 +17,7 @@ Aplicación móvil para operadores de campo que registran sesiones de recolecci�
 cd companion-app
 npm install
 ```
-##Ejecutar en local
+## Ejecutar en local
 ```bash
 npx expo start
 ```
