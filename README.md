@@ -56,4 +56,25 @@ npm run web
 | **GET** | `/api/v1/devices` | Obtiene lista de equipos disponibles |
 | **POST** | `/api/v1/sessions` | Envía registro de sesión recolectada |
 
+## Estructura del proyecto
 
+companion-app/
+├── App.js                    # Punto de entrada principal
+├── screens/
+│   └── SessionScreen.js      # Pantalla principal (flujo completo)
+├── components/
+│   ├── RecordingView.js      # Vista de sesion activa con cronómetro
+│   └── FeedbackModal.js      # Modal de reporte de incidentes
+├── services/
+│   ├── deviceService.js      # Mock de GET /api/v1/devices
+│   └── sessionService.js     # Mock de POST /api/v1/sessions
+├── mocks/
+│   └── equipments.js         # Datos simulados de equipos
+├── hooks/
+│   └── useTimer.js           # Hook personalizado del cronómetro
+├── constants/
+│   └── theme.js              # Paleta de colores y estilos globales
+├── assets/
+│   └── wireframes/           # Prototipos de la Fase 1
+├── fase3.md                  # Estrategia offline-first
+└── README.md
