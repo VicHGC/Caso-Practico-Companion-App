@@ -13,6 +13,39 @@ Para garantizar que los operadores no pierdan sus registros de campo al quedarse
 
 ## Logica a implementar:
 
-1. Al presionar el boton de envio, la aplicacion intenta realizar el metodo 'POST'. Si la API falla y arroja un error de red o se detecta una falta de conexion, se captura la excepcion.
+1. Al presionar el boton de enviar, la aplicacion intenta realizar el metodo 'POST'. Si la API falla y arroja un error de red o se detecta una falta de conexion, se captura la excepcion.
 2. En lugar de perder el payload con el JSON, este se guarda en el almacenamiento local del dispositivo usando librerias como `AsyncStorage` y el payload se guarda con una clave de almacenamiento.
 3. Utilizando un listener de estado de red como `@react-native-community/netinfo` la aplicacion se mantendria a la escucha para que cuando el dispositivo recupere la conexion a internet un proceso en segundo plano lea la cola con la clave de almacenamiento y envie los datos al servidor. Si se recibe un status 200(ok), se limpia el almacenamiento local. 
+
+## Pseudocodigo:
+
+```
+Funcion finalizarSesion(datos)
+  SI hay internet Entonces
+      ENVIAR datos al servidor
+  SINO
+      GUARDAR datos en AsyncStorage con clave "Sesiones_pendientes"
+      Mostrar alerta "Sin conexion, Datos guardados localmente"
+  FIN SI
+FIN FUNCION
+
+FUNCION guardarEnLocal(datos)
+  cola ← LEER AsyncStorage("sesiones_pendientes")
+  sesiones ← SI cola existe ENTONCES DECODIFICAR(cola) SINO []
+  AGREGAR datos a sesiones
+  GUARDAR sesiones en AsyncStorage("sesiones_pendientes")
+FIN FUNCION
+
+FUNCION sincronizarPendientes()
+  cola ← LEER AsyncStorage("sesiones_pendientes")
+  SI cola NO existe ENTONCES TERMINAR
+
+  sesiones ← DECODIFICAR(cola)
+  POR CADA sesion EN sesiones HACER
+    ENVIAR sesion al servidor
+  FIN POR CADA
+
+  ELIMINAR AsyncStorage("sesiones_pendientes")
+FIN FUNCION
+
+```
