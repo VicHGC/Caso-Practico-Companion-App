@@ -14,5 +14,5 @@ Para garantizar que los operadores no pierdan sus registros de campo al quedarse
 ## Logica a implementar:
 
 1. Al presionar el boton de envio, la aplicacion intenta realizar el metodo 'POST'. Si la API falla y arroja un error de red o se detecta una falta de conexion, se captura la excepcion.
-2. En lugar de perder el payload con el JSON, este se guarda en el almacenamiento local del dispositivo usando librerias como `AsyncStorage`. El payload se guarda con una clave de almacenamiento.
+2. En lugar de perder el payload con el JSON, este se guarda en el almacenamiento local del dispositivo usando librerias como `AsyncStorage` y el payload se guarda con una clave de almacenamiento.
 3. Utilizando un listener de estado de red como `@react-native-community/netinfo` la aplicacion se mantendria a la escucha para que cuando el dispositivo recupere la conexion a internet un proceso en segundo plano lea la cola con la clave de almacenamiento y envie los datos al servidor. Si se recibe un status 200(ok), se limpia el almacenamiento local. 
