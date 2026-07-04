@@ -20,6 +20,8 @@ cd companion-app
 npm install
 ```
 ## Ejecutar en local
+
+### Opcion 1 - web (Recomendada, sin instalaciones adicionales).
 ```bash
 npx expo start
 ```
