@@ -51,6 +51,9 @@ npm run web
 
 ## API Mock
 
-### Metodo ### Endpoint ### Descripcion
+| Método | Endpoint | Descripción |
+| ------ | -------- | ----------- |
+| **GET** | `/api/v1/devices` | Obtiene lista de equipos disponibles |
+| **POST** | `/api/v1/sessions` | Envía registro de sesión recolectada |
 
 
