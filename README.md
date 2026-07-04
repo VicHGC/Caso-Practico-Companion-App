@@ -47,3 +47,10 @@ npm run web
 - Reporte de incidentes al finalizar la sesión.
 
 - Simulación de comunicación con API REST.
+
+
+## API Mock
+
+### Metodo ### Endpoint ### Descripcion
+
+
