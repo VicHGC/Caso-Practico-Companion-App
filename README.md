@@ -40,14 +40,10 @@ npm run web
 3. Escanea el código QR que aparece en la consola utilizando la aplicación Expo Go.
 
 ## Funcionalidades
-- Lista de equipos disponibles para recolección.
+- Lista de equipos disponibles.
 
 - Selección de equipo mediante interfaz tipo tarjetas.
-
-- Inicio y detención de sesión con cronómetro en vivo.
 
 - Reporte de incidentes al finalizar la sesión.
 
 - Simulación de comunicación con API REST.
-
-- Persistencia local y soporte offline-first.
