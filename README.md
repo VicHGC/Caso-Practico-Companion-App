@@ -16,3 +16,9 @@ Aplicación móvil para operadores de campo que registran sesiones de recolecci�
 ```bash
 cd companion-app
 npm install
+```
+##Ejecutar en local
+```bash
+npx expo start
+```
+Cuando se abra Expo Dev Tools en tu terminal, presiona la tecla w para abrir la app en el navegador.
