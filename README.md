@@ -23,7 +23,7 @@ npm install
 
 ### Opcion 1 - web (Recomendada, sin instalaciones adicionales).
 ```bash
-npx expo start
+npm start
 ```
 Cuando se abra Expo Dev Tools en tu terminal, presiona la tecla w para abrir la app en el navegador.
 
